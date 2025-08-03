@@ -1,0 +1,105 @@
+- type: entity
+  abstract: true
+  parent: [MetalSounds, BaseItem] # Sunrise edit
+  id: MetalBaseSunrise
+  description: A sheet of metal, used often on the station in various applications.
+  components:
+  - type: Sprite
+    sprite: _Sunrise/Objects/materials/metal.rsi
+  - type: Item
+    sprite: _Sunrise/Objects/materials/metal.rsi
+    size: Normal
+  - type: StaticPrice
+    price: 0
+  - type: Tag
+    tags:
+    - Rolls
+    - Metal
+    - Sheet
+    - NoPaint  # Sunrise-edit
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: SolutionContainerManager
+    solutions:
+      copper:
+        canReact: false
+  - type: GuideHelp
+    guides:
+    - ExpandingRepairingStation
+
+- type: entity
+  parent: MetalBaseSunrise
+  id: CopperRoll
+  name: copper roll
+  suffix: Full
+  components:
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      Copper: 100
+  - type: Stack
+    stackType: Copper
+    baseLayer: base
+    layerStates:
+    - copper
+    - copper_2
+    - copper_3
+  - type: Sprite
+    state: copper_3
+    layers:
+    - state: copper_3
+      map: ["base"]
+  - type: Item
+    heldPrefix: copper
+  - type: Appearance
+  - type: Extractable
+    grindableSolutionName: copper
+  - type: SolutionContainerManager
+    solutions:
+      copper:
+        reagents:
+        - ReagentId: Copper
+          Quantity: 10
+
+- type: entity
+  parent: CopperRoll
+  id: CopperRoll10
+  name: copper
+  suffix: 10
+  components:
+  - type: Sprite
+    state: copper
+  - type: Stack
+    stackType: Copper
+    count: 10
+
+- type: entity
+  parent: CopperRoll
+  id: CopperRoll1
+  name: copper
+  suffix: Single
+  components:
+  - type: Sprite
+    state: copper
+  - type: Stack
+    stackType: Copper
+    count: 1
+
+- type: entity
+  parent: CopperRoll
+  id: CopperRollLingering0
+  suffix: Lingering, 0
+  components:
+  - type: Stack
+    lingering: true
+    count: 0
+
