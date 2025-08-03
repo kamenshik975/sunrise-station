@@ -17,6 +17,8 @@
   - type: Sprite
     sprite: _Sunrise/Abductor/Objects/Weapons/Melee/wonderprod.rsi
     state: icon
+  - type: UseDelay
+    delay: 1
   - type: RestrictByUserTag
     contains:
     - Abductor
@@ -43,7 +45,7 @@
           angle: 60
           animation: WeaponArcThrust
         - type: StaminaDamageOnHit
-          damage: 55
+          damage: 60
           sound: /Audio/Weapons/egloves.ogg
         soundStateActivate:
           collection: sparks

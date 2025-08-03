@@ -5,6 +5,9 @@
   id: BaseMobArachnid
   abstract: true
   components:
+  # SUNRISE EDIT
+  - type: Interactions
+  # SUNRISE EDIT
   - type: Absorbable
   - type: Body
     prototype: Arachnid
@@ -154,8 +157,6 @@
         layer:
         - MobLayer
   - type: Carriable
-  - type: ScaleSprite
-    scale: 1.1, 1.2
   # Sunrise-end
 
 - type: entity

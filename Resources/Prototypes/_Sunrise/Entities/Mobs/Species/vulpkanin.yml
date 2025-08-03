@@ -5,6 +5,7 @@
   id: BaseMobVulpkanin
   abstract: true
   components:
+  - type: Interactions
   - type: Absorbable
   - type: Speech
     speechVerb: Vulpkanin
@@ -89,6 +90,8 @@
         Blunt: 2
         Slash: 3
   - type: Carriable
+  - type: ToggleableNightVision
+    effect: EffectNightVisioSpecies
 
 
 - type: entity

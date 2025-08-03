@@ -684,7 +684,7 @@ BarSignSpacebucksAlignTile: BarSignSpacebucks
 BarSignMaltroachAlignTile: BarSignMaltroach
 BarSignWhiskeyEchoesAlignTile: BarSignWhiskeyEchoes
 
-# Sunrise migrations
+# Sunrise-Start
 AirlockExternalGlassShuttleArrivals: AirlockExternalGlassShuttleArrivalsLocked
 AirlockHatchSyndicate: AirlockHatchSyndicateLocked
 SurveillanceCameraWirelessRouterBase: SurveillanceCameraWirelessRouterConstructed
@@ -779,12 +779,20 @@ TableWoodReinforced: null
 BoxMiniSyringe: null
 LauncherSyringeMed: null
 PlushieUunaMiira: null
-AbductorDispencer: VendingMachineAbductorDispenser # Abductor shit.
-
-# Кто удалил и не добавил в миграции
+AbductorDispencer: VendingMachineAbductorDispenser
+SpawnMechRipley: SpawnMechHauler
 PrintedDocumentClosingIndictment: null
 PrintedDocumentPermissionDisposeBody: null
 PrintedDocumentDeathCertificate: null
 PrintedDocumentReportOnTheChaptersMeeting: null
 SheetPrinter1: null
 BorgModuleDefibrillator: null
+MagazineM16A4: null
+MagazineG36: null
+MagazineFamas: null
+BaseUplinkNTERT75BC: null
+BaseUplinkNTERT100BC: null
+BaseUplinkNTERT200BC: null
+AtmosDeviceFanTiny: null
+AtmosDeviceFanDirectional: null
+# Sunrise-End

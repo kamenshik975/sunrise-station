@@ -114,7 +114,7 @@
   id: HumanHairCotton
   bodyPart: Hair
   markingCategory: Hair
-  sponsorOnly: true # Sunrise-Sponsors
+  sponsorOnly: false
   sprites:
     - sprite: _Sunrise/Mobs/Customization/human_hair.rsi
       state: cotton
@@ -155,7 +155,7 @@
   id: HumanHairFingerwave
   bodyPart: Hair
   markingCategory: Hair
-  sponsorOnly: true # Sunrise-Sponsors
+  sponsorOnly: false
   sprites:
     - sprite: _Sunrise/Mobs/Customization/human_hair.rsi
       state: fingerwave
@@ -172,7 +172,7 @@
   id: HumanHairFortuneteller
   bodyPart: Hair
   markingCategory: Hair
-  sponsorOnly: true # Sunrise-Sponsors
+  sponsorOnly: false
   sprites:
     - sprite: _Sunrise/Mobs/Customization/human_hair.rsi
       state: fortuneteller
@@ -181,7 +181,7 @@
   id: HumanHairFortunetellerAlt
   bodyPart: Hair
   markingCategory: Hair
-  sponsorOnly: true # Sunrise-Sponsors
+  sponsorOnly: false
   sprites:
     - sprite: _Sunrise/Mobs/Customization/human_hair.rsi
       state: fortuneteller_alt
@@ -326,7 +326,7 @@
   id: HumanHairLongdtails
   bodyPart: Hair
   markingCategory: Hair
-  sponsorOnly: true # Sunrise-Sponsors
+  sponsorOnly: false
   sprites:
     - sprite: _Sunrise/Mobs/Customization/human_hair.rsi
       state: longdtails
@@ -359,7 +359,7 @@
   id: HumanHairLooseSlicked
   bodyPart: Hair
   markingCategory: Hair
-  sponsorOnly: true # Sunrise-Sponsors
+  sponsorOnly: false
   sprites:
     - sprite: _Sunrise/Mobs/Customization/human_hair.rsi
       state: loose_slicked
@@ -408,7 +408,7 @@
   id: HumanHairQuadcurls
   bodyPart: Hair
   markingCategory: Hair
-  sponsorOnly: true # Sunrise-Sponsors
+  sponsorOnly: false
   sprites:
     - sprite: _Sunrise/Mobs/Customization/human_hair.rsi
       state: quadcurls
@@ -441,7 +441,7 @@
   id: HumanHairShy
   bodyPart: Hair
   markingCategory: Hair
-  sponsorOnly: true # Sunrise-Sponsors
+  sponsorOnly: false
   sprites:
     - sprite: _Sunrise/Mobs/Customization/human_hair.rsi
       state: shy
@@ -514,7 +514,7 @@
   id: HumanHairSpicy
   bodyPart: Hair
   markingCategory: Hair
-  sponsorOnly: true # Sunrise-Sponsors
+  sponsorOnly: false
   sprites:
     - sprite: _Sunrise/Mobs/Customization/human_hair.rsi
       state: spicy
@@ -555,7 +555,7 @@
   id: HumanHairWife
   bodyPart: Hair
   markingCategory: Hair
-  sponsorOnly: true # Sunrise-Sponsors
+  sponsorOnly: false
   sprites:
     - sprite: _Sunrise/Mobs/Customization/human_hair.rsi
       state: wife
@@ -731,13 +731,21 @@
     state: moon
 
 - type: marking
+  id: HairMalet
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+  - sprite: _Sunrise/Mobs/Customization/sunrise_human_hair.rsi
+    state: malet
+
+- type: marking
   id: HairLongDisheveled
   bodyPart: Hair
   markingCategory: Hair
   sprites:
   - sprite: _Sunrise/Mobs/Customization/sunrise_human_hair.rsi
     state: hair_long_disheveled
-  
+
 - type: marking
   id: HairQuickInstalation
   bodyPart: Hair
@@ -793,3 +801,67 @@
   sprites:
   - sprite: _Sunrise/Mobs/Customization/sunrise_human_hair.rsi
     state: hair_medium_disheveled
+
+- type: marking
+  id: HairBunWithTail
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+  - sprite: _Sunrise/Mobs/Customization/sunrise_human_hair.rsi
+    state: hair_bun-with-tail
+
+- type: marking
+  id: HairBunWithTailAlt
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+  - sprite: _Sunrise/Mobs/Customization/sunrise_human_hair.rsi
+    state: hair_bun-with-tail2
+
+- type: marking
+  id: HairGluckosa
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+  - sprite: _Sunrise/Mobs/Customization/sunrise_human_hair.rsi
+    state: hair_gluckosa
+
+- type: marking
+  id: HairAppleJack
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+  - sprite: _Sunrise/Mobs/Customization/sunrise_human_hair.rsi
+    state: hair_applejack
+
+- type: marking
+  id: HairPinkiePie
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+  - sprite: _Sunrise/Mobs/Customization/sunrise_human_hair.rsi
+    state: hair_pinkie-pie
+
+- type: marking
+  id: HairRarity
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+  - sprite: _Sunrise/Mobs/Customization/sunrise_human_hair.rsi
+    state: hair_rarity
+
+- type: marking
+  id: HairAqua
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+  - sprite: _Sunrise/Mobs/Customization/sunrise_human_hair.rsi
+    state: hair_aqua
+
+- type: marking
+  id: HairBairdAndBangs
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+  - sprite: _Sunrise/Mobs/Customization/sunrise_human_hair.rsi
+    state: hair_baird-and-bangs

@@ -5,6 +5,9 @@
   name: Urist McHands
   abstract: true
   components:
+# SUNRISE EDIT
+  - type: Interactions
+# SUNRISE EDIT
   - type: Absorbable
   - type: Hunger
   - type: Icon # It will not have an icon in the adminspawn menu without this. Body parts seem fine for whatever reason.
@@ -25,6 +28,142 @@
     hideLayersOnEquip:
     - Hair
     - Snout
+    # MARKINGS START
+    bodyTypeMarkingsDisplacement:
+      body-fat-m:
+        Hair:
+          sizeMaps:
+            32:
+              sprite: _Sunrise/Mobs/Species/Human/Fat/displacement.rsi
+              state: hair
+      body-fat-f:
+        Hair:
+          sizeMaps:
+            32:
+              sprite: _Sunrise/Mobs/Species/Human/Fat/displacement.rsi
+              state: hair
+      body-slim-m:
+        Hair:
+          sizeMaps:
+            32:
+              sprite: _Sunrise/Mobs/Species/Human/Slim/displacement.rsi
+              state: hair
+      body-slim-f:
+        Hair:
+          sizeMaps:
+            32:
+              sprite: _Sunrise/Mobs/Species/Human/Slim/displacement.rsi
+              state: hair
+      body-distrofik-m:
+        Hair:
+          sizeMaps:
+            32:
+              sprite: _Sunrise/Mobs/Species/Human/Distrofik/displacement.rsi
+              state: hair
+      body-distrofik-f:
+        Hair:
+          sizeMaps:
+            32:
+              sprite: _Sunrise/Mobs/Species/Human/Distrofik/displacement.rsi
+              state: hair
+      body-giga-m:
+        Hair:
+          sizeMaps:
+            32:
+              sprite: _Sunrise/Mobs/Species/Human/Giga/displacement.rsi
+              state: hair
+      body-giga-f:
+        Hair:
+          sizeMaps:
+            32:
+              sprite: _Sunrise/Mobs/Species/Human/Giga/displacement.rsi
+              state: hair
+# MARKINGS END
+  # HANDS DISPLACEMENT
+  - type: Hands
+    leftHandBodyTypeDisplacements:
+      body-giga-m:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Giga/displacement.rsi
+            state: hand_l
+      body-giga-f:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Giga/displacement.rsi
+            state: hand_l
+      body-slim-m:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Slim/displacement.rsi
+            state: hand_l
+      body-slim-f:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Slim/displacement.rsi
+            state: hand_l
+      body-distrofik-m:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Distrofik/displacement.rsi
+            state: hand_l
+      body-distrofik-f:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Distrofik/displacement.rsi
+            state: hand_l
+      body-fat-m:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Fat/displacement.rsi
+            state: hand_l
+      body-fat-f:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Fat/displacement.rsi
+            state: hand_l
+    rightHandBodyTypeDisplacements:
+      body-giga-m:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Giga/displacement.rsi
+            state: hand_r
+      body-giga-f:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Giga/displacement.rsi
+            state: hand_r
+      body-slim-m:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Slim/displacement.rsi
+            state: hand_r
+      body-slim-f:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Slim/displacement.rsi
+            state: hand_r
+      body-distrofik-m:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Distrofik/displacement.rsi
+            state: hand_r
+      body-distrofik-f:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Distrofik/displacement.rsi
+            state: hand_r
+      body-fat-m:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Fat/displacement.rsi
+            state: hand_r
+      body-fat-f:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Fat/displacement.rsi
+            state: hand_r
+  # HANDS DISPLACEMENT
   - type: Inventory
 ### Female
 ## BASE
@@ -167,6 +306,11 @@
           32:
             sprite: _Sunrise/Mobs/Species/Human/Fat/displacement.rsi
             state: head
+      belt-body-fat-f:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Fat/displacement.rsi
+            state: belt
 ## Distrofik
       jumpsuit-body-distrofik-f:
         sizeMaps:
@@ -348,6 +492,11 @@
           32:
             sprite: _Sunrise/Mobs/Species/Human/Fat/displacement.rsi
             state: head
+      belt-body-fat-m:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Fat/displacement.rsi
+            state: belt
 # Distrofik
       jumpsuit-body-distrofik-m:
         sizeMaps:
@@ -407,16 +556,153 @@
   id: MobHumanDummy
   categories: [ HideSpawnMenu ]
   components:
+  - type: HumanoidAppearance
+  # MARKINGS START
+    bodyTypeMarkingsDisplacement:
+      body-fat-m:
+        Hair:
+          sizeMaps:
+            32:
+              sprite: _Sunrise/Mobs/Species/Human/Fat/displacement.rsi
+              state: hair
+      body-fat-f:
+        Hair:
+          sizeMaps:
+            32:
+              sprite: _Sunrise/Mobs/Species/Human/Fat/displacement.rsi
+              state: hair
+      body-slim-m:
+        Hair:
+          sizeMaps:
+            32:
+              sprite: _Sunrise/Mobs/Species/Human/Slim/displacement.rsi
+              state: hair
+      body-slim-f:
+        Hair:
+          sizeMaps:
+            32:
+              sprite: _Sunrise/Mobs/Species/Human/Slim/displacement.rsi
+              state: hair
+      body-distrofik-m:
+        Hair:
+          sizeMaps:
+            32:
+              sprite: _Sunrise/Mobs/Species/Human/Distrofik/displacement.rsi
+              state: hair
+      body-distrofik-f:
+        Hair:
+          sizeMaps:
+            32:
+              sprite: _Sunrise/Mobs/Species/Human/Distrofik/displacement.rsi
+              state: hair
+      body-giga-m:
+        Hair:
+          sizeMaps:
+            32:
+              sprite: _Sunrise/Mobs/Species/Human/Giga/displacement.rsi
+              state: hair
+      body-giga-f:
+        Hair:
+          sizeMaps:
+            32:
+              sprite: _Sunrise/Mobs/Species/Human/Giga/displacement.rsi
+              state: hair
+# MARKINGS END
+  # HANDS DISPLACEMENT
+  - type: Hands
+    leftHandBodyTypeDisplacements:
+      body-giga-m:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Giga/displacement.rsi
+            state: hand_l
+      body-giga-f:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Giga/displacement.rsi
+            state: hand_l
+      body-slim-m:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Slim/displacement.rsi
+            state: hand_l
+      body-slim-f:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Slim/displacement.rsi
+            state: hand_l
+      body-distrofik-m:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Distrofik/displacement.rsi
+            state: hand_l
+      body-distrofik-f:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Distrofik/displacement.rsi
+            state: hand_l
+      body-fat-m:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Fat/displacement.rsi
+            state: hand_l
+      body-fat-f:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Fat/displacement.rsi
+            state: hand_l
+    rightHandBodyTypeDisplacements:
+      body-giga-m:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Giga/displacement.rsi
+            state: hand_r
+      body-giga-f:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Giga/displacement.rsi
+            state: hand_r
+      body-slim-m:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Slim/displacement.rsi
+            state: hand_r
+      body-slim-f:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Slim/displacement.rsi
+            state: hand_r
+      body-distrofik-m:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Distrofik/displacement.rsi
+            state: hand_r
+      body-distrofik-f:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Distrofik/displacement.rsi
+            state: hand_r
+      body-fat-m:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Fat/displacement.rsi
+            state: hand_r
+      body-fat-f:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Fat/displacement.rsi
+            state: hand_r
+  # HANDS DISPLACEMENT
   - type: Inventory
 ### Female
-# Base
+## BASE
     femaleDisplacements:
-      jumpsuit-body-normal:
+      jumpsuit:
         sizeMaps:
           32:
             sprite: _Sunrise/Mobs/Species/Human/Basic/displacement.rsi
             state: jumpsuit-female
-# Slim
+## SLIM
       jumpsuit-body-slim-f:
         sizeMaps:
           32:
@@ -462,7 +748,7 @@
           32:
             sprite: _Sunrise/Mobs/Species/Human/Slim/displacement.rsi
             state: back
-# Giga
+## Giga
       jumpsuit-body-giga-f:
         sizeMaps:
           32:
@@ -498,7 +784,7 @@
           32:
             sprite: _Sunrise/Mobs/Species/Human/Giga/displacement.rsi
             state: neck
-# Fat
+## Fat
       jumpsuit-body-fat-f:
         sizeMaps:
           32:
@@ -549,7 +835,12 @@
           32:
             sprite: _Sunrise/Mobs/Species/Human/Fat/displacement.rsi
             state: head
-# Distrofik
+      belt-body-fat-f:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Fat/displacement.rsi
+            state: belt
+## Distrofik
       jumpsuit-body-distrofik-f:
         sizeMaps:
           32:
@@ -596,7 +887,7 @@
             sprite: _Sunrise/Mobs/Species/Human/Distrofik/displacement.rsi
             state: back
 ### Male
-# Slim
+## Slim
     maleDisplacements:
       jumpsuit-body-slim-m:
         sizeMaps:
@@ -730,6 +1021,11 @@
           32:
             sprite: _Sunrise/Mobs/Species/Human/Fat/displacement.rsi
             state: head
+      belt-body-fat-m:
+        sizeMaps:
+          32:
+            sprite: _Sunrise/Mobs/Species/Human/Fat/displacement.rsi
+            state: belt
 # Distrofik
       jumpsuit-body-distrofik-m:
         sizeMaps:

@@ -28,6 +28,7 @@ using Content.Client.Stylesheets;
 using Content.Client.UserInterface;
 using Content.Client.Viewport;
 using Content.Client.Voting;
+using Content.Shared._Sunrise.InteractionsPanel.Data.UI;
 using Content.Shared.Ame.Components;
 using Content.Shared.Gravity;
 using Content.Shared.Localizations;
@@ -134,12 +135,15 @@ namespace Content.Client.Entry
             _prototypeManager.RegisterIgnore("wireLayout");
             _prototypeManager.RegisterIgnore("alertLevels");
             _prototypeManager.RegisterIgnore("nukeopsRole");
-            _prototypeManager.RegisterIgnore("stationGoal"); // Sunrise-StationGoal
-            _prototypeManager.RegisterIgnore("sponsorLoadout"); // Sunrise-Sponsors
-            _prototypeManager.RegisterIgnore("holidayGiveawayItem"); // Sunrise-Edit
             _prototypeManager.RegisterIgnore("ghostRoleRaffleDecider");
             _prototypeManager.RegisterIgnore("codewordGenerator");
             _prototypeManager.RegisterIgnore("codewordFaction");
+            // Sunrise-Start
+            _prototypeManager.RegisterIgnore("stationGoal");
+            _prototypeManager.RegisterIgnore("sponsorLoadout");
+            _prototypeManager.RegisterIgnore("holidayGiveawayItem");
+            _prototypeManager.RegisterIgnore("gamePresetPool");
+            // Sunrise-End
 
             _componentFactory.GenerateNetIds();
             _adminManager.Initialize();
@@ -166,6 +170,9 @@ namespace Content.Client.Entry
             _configManager.SetCVar("interface.resolutionAutoScaleLowerCutoffX", 520);
             _configManager.SetCVar("interface.resolutionAutoScaleLowerCutoffY", 240);
             _configManager.SetCVar("interface.resolutionAutoScaleMinimum", 0.5f);
+
+            _configManager.SetCVar(InteractionsCVars.WindowPosX, 0); // Sunrise-Edit
+            _configManager.SetCVar(InteractionsCVars.WindowPosY, 0); // Sunrise-Edit
         }
 
         public override void Shutdown()
