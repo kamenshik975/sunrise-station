@@ -5,15 +5,14 @@
   description: A sheet of metal, used often on the station in various applications.
   components:
   - type: Sprite
-    sprite: _Sunrise/Objects/materials/metal.rsi
+    sprite: Resources/Textures/_Sunrise/Objects/Materials/metal.rsi
   - type: Item
-    sprite: _Sunrise/Objects/materials/metal.rsi
+    sprite: Resources/Textures/_Sunrise/Objects/Materials/metal.rsi
     size: Normal
   - type: StaticPrice
     price: 0
   - type: Tag
     tags:
-    - Rolls
     - Metal
     - Sheet
     - NoPaint  # Sunrise-edit
@@ -30,7 +29,7 @@
         acts: [ "Destruction" ]
   - type: SolutionContainerManager
     solutions:
-      copper:
+      cuprum:
         canReact: false
   - type: GuideHelp
     guides:
@@ -38,65 +37,65 @@
 
 - type: entity
   parent: MetalBaseSunrise
-  id: CopperRoll
-  name: copper roll
+  id: CuprumSheet
+  name: copper
   suffix: Full
   components:
   - type: Material
   - type: PhysicalComposition
     materialComposition:
-      Copper: 100
+      Cuprum: 100
   - type: Stack
-    stackType: Copper
+    stackType: Cuprum
     baseLayer: base
     layerStates:
-    - copper
-    - copper_2
-    - copper_3
+    - cuprum
+    - cuprum_2
+    - cuprum_3
   - type: Sprite
-    state: copper_3
+    state: cuprum_3
     layers:
-    - state: copper_3
+    - state: cuprum_3
       map: ["base"]
   - type: Item
-    heldPrefix: copper
+    heldPrefix: cuprum
   - type: Appearance
   - type: Extractable
-    grindableSolutionName: copper
+    grindableSolutionName: cuprum
   - type: SolutionContainerManager
     solutions:
-      copper:
+      cuprum:
         reagents:
         - ReagentId: Copper
           Quantity: 10
 
 - type: entity
-  parent: CopperRoll
-  id: CopperRoll10
+  parent: CuprumSheet
+  id: CuprumSheet10
   name: copper
   suffix: 10
   components:
   - type: Sprite
-    state: copper
+    state: cuprum
   - type: Stack
-    stackType: Copper
+    stackType: Cuprum
     count: 10
 
 - type: entity
-  parent: CopperRoll
-  id: CopperRoll1
+  parent: CuprumSheet
+  id: CuprumSheet1
   name: copper
   suffix: Single
   components:
   - type: Sprite
-    state: copper
+    state: cuprum
   - type: Stack
-    stackType: Copper
+    stackType: Cuprum
     count: 1
 
 - type: entity
-  parent: CopperRoll
-  id: CopperRollLingering0
+  parent: CuprumSheet
+  id: CuprumSheetLingering0
   suffix: Lingering, 0
   components:
   - type: Stack

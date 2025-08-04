@@ -9,13 +9,13 @@
   "states": [
 
     {
-      "name": "copper"
+      "name": "cuprum"
     },
     {
-      "name": "copper_2"
+      "name": "cuprum"
     },
     {
-      "name": "copper_3"
+      "name": "cuprum"
     },
      {
       "name": "zinc"
@@ -62,11 +62,11 @@
       "directions": 4
     },
     {
-      "name": "copper-inhand-left",
+      "name": "cuprum-inhand-left",
       "directions": 4
     },
     {
-      "name": "copper-inhand-right",
+      "name": "cuprum-inhand-right",
       "directions": 4
     },
     {
